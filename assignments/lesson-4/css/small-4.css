@@ -11,20 +11,22 @@ header {
   background-color: #f2ebc7;
   font-family: Tahoma,Geneva,sans-serif;
   margin: 0 auto;
-  /* text-align: center; */
-  /* display: block; */
+  vertical-align: middle;
+}
+header img {
+  width: 80px;
   vertical-align: middle;
 }
 .headings {
   display: inline-block;
-  /* vertical-align: middle; */
-}
-header img, .heading {
-  width: 80px;
+  vertical-align: middle;
+  text-align: left;
+  margin-left: 5px;
 }
 .moto {
   font-family: 'Open Sans', sans-serif;
   padding: 0;
+  /* text-align: left; */
 }
 nav {
   margin: 0 auto;
@@ -53,7 +55,6 @@ h1,h2,h3 {
 h1 {
   font-size: 20px;
   color: #962d3e;
-  display: inline-block;
   padding: 0px;
   margin: 0 auto;
 }

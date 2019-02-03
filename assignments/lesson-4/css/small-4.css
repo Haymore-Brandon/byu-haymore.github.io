@@ -7,12 +7,13 @@ body {
   max-width: 500px;
 }
 header {
-  /* padding: 10px auto; */
+  padding: 5px;
   background-color: #f2ebc7;
   font-family: Tahoma,Geneva,sans-serif;
-  text-align: center;
+  margin: 0 auto;
   /* text-align: center; */
   /* display: block; */
+  vertical-align: middle;
 }
 .headings {
   display: inline-block;
@@ -23,9 +24,11 @@ header img, .heading {
 }
 .moto {
   font-family: 'Open Sans', sans-serif;
+  padding: 0;
 }
 nav {
   margin: 0 auto;
+  padding: 10px;
   background-color: #348899;
   text-align: center;
   font-family: Tahoma,Geneva,sans-serif;
@@ -50,6 +53,9 @@ h1,h2,h3 {
 h1 {
   font-size: 20px;
   color: #962d3e;
+  display: inline-block;
+  padding: 0px;
+  margin: 0 auto;
 }
 h2, h3 {
   color: #979c9c;

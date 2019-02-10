@@ -72,15 +72,26 @@ h3 {
   font-size: 14px;
 }
 
+main {
+  margin: 10px;
+}
+.title {
+  font-size: 15px;
+}
 .selected a {
   color: #5c5e67;
 }
 .summary {
   position: relative;
-
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 .summary img {
-  width: 400px;
+  width: 100%;
+}
+.summary .left {
+  color: #f2ebc7;
 }
 .currentweather {
   position: absolute;
@@ -88,7 +99,14 @@ h3 {
   left: 10px;
   background-color: #348899;
   opacity: .9;
-  padding: 5px;
+  padding: 15px;
+}
+.currentweather .title {
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-position: under;
+  padding-bottom: 10px;
+  color: black;
 }
 .right {
   text-align: right;
@@ -98,16 +116,7 @@ h3 {
 }
 
 .forcast {
-}
-.forcast table {
-  border: 1px solid black;
-}
-.forcast th {
-  background-color: #348899;
-  margin: 0;
-}
-.forcast img {
-  max-width: 40px;
+  display: none;
 }
 
 footer {

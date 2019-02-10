@@ -1,0 +1,14 @@
+@media (min-width: 600px) {
+  body {
+    max-width: none;
+  }
+  .headings {
+    margin-left: 50px;
+  }
+  nav ul li {
+    display: inline;
+  }
+  .summary img {
+    width: 800px;
+  }
+}

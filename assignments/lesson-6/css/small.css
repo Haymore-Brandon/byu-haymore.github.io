@@ -1,0 +1,156 @@
+body {
+  color: #343642;
+  font-family: Verdana,Geneva,sans-serif;
+  font-size: 16px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  padding: 5px;
+  background-color: #f2ebc7;
+  font-family: Tahoma,Geneva,sans-serif;
+}
+header img {
+  width: 80px;
+  vertical-align: middle;
+}
+.headings {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  margin-left: 5px;
+}
+.moto {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+}
+nav {
+  padding: 10px;
+  background-color: #348899;
+  font-family: Tahoma,Geneva,sans-serif;
+}
+nav ul {
+  padding: 0;
+  list-style-type: none;
+}
+nav ul li {
+  padding: 3px;
+}
+nav a {
+  color: #343642;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 3px;
+}
+
+nav a:hover {
+  background-color: #5c9fad;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.responsive li {
+  display: block;
+}
+
+h1,h2,h3 {
+  font-family: Tahoma,Geneva,sans-serif;
+}
+h1 {
+  font-size: 20px;
+  color: #962d3e;
+  padding: 0px;
+  margin: 0 auto;
+}
+h2, h3 {
+  color: #979c9c;
+}
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 14px;
+}
+
+.title {
+  margin: 10px;
+  font-size: 20px;
+}
+.selected a {
+  color: #5c5e67;
+}
+.summary {
+  position: relative;
+  color: white;
+  margin: auto;
+  max-width: 800px;
+}
+.summary .left {
+  color: #f2ebc7;
+}
+.currentweather {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #348899;
+  opacity: .9;
+  padding: 15px;
+}
+.currentweather .title {
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-position: under;
+  padding-bottom: 10px;
+  color: black;
+}
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left
+}
+
+.forcast {
+  display: none;
+}
+
+.article {
+  background-color: #fbf9ee;
+  margin: 20px;
+  padding: 20px;
+  max-width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article p {
+  text-align: left;
+}
+
+.contact {
+  background-color: #f2ebc7;
+  padding: 10px;
+}
+
+footer {
+  background-color: #343642;
+  color: #fff;
+  padding: 10px;
+  margin: 0 auto;
+}
+.contactInfo {
+  display: inline-block;
+  text-align: left;
+}
+.contactInfo,img {
+  padding-right: 5px;
+}
+.map {
+  width: 200px;
+}

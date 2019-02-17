@@ -1,0 +1,42 @@
+@media (min-width: 800px) {
+  body {
+    max-width: none;
+  }
+  .headings {
+    margin-left: 50px;
+  }
+  nav ul li {
+    display: inline;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+  .navigation li {
+    display: inline-block;
+  }
+  .summary {
+  }
+  .forcast {
+    display: inline-block;
+  }
+  .forcast table {
+    width: 400px;
+    border-collapse: collapse;
+  }
+  .forcast table, .forcast th, .forcast td{
+    border: 1px solid black;
+  }
+  .forcast th {
+    background-color: #348899;
+    margin: 0;
+  }
+  .forcast img {
+    max-width: 40px;
+  }
+
+  .article img {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+}

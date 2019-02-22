@@ -8,18 +8,13 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/large.css">
-    <script src="scripts/hamburger.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
   <body>
     <header>
         <img src="images/weather.png" alt="Weather Icon">
-      <section class="headings">
-        <h1>Preston Weather</h1>
-        <div class="moto">
-          Site moto
-        </div>
-      </section>
+        <h1>IC Weather</h1>
+        Weather Information You Need
     </header>
     <nav>
       <ul class="navigation">
@@ -32,10 +27,8 @@
         <li><a href="#">Gallery</a></li>
       </ul>
     </nav>
-    <section class="title">
-      Preston, Idaho
-    </section>
-    <section class="summary">
+    <h2>Preston, Idaho</h2>
+    <section class="weather-summary">
       <picture>
         <source media="(max-width: 360px)" srcset="images/landscape-cropped-360.jpg">
         <source media="(max-width: 600px)" srcset="images/landscape-600.jpg">
@@ -69,7 +62,7 @@
       </div>
     </section>
     <section class="forcast">
-      <div class="title">5 Day Forcast</div>
+      <h2>5 Day Forcast</h2>
       <table>
           <tr>
             <th>Wed</th>
@@ -79,22 +72,22 @@
             <th>Sun</th>
           </tr>
           <tr>
-            <td><img src="images/sunny-icon.png" alt=""><br>79 &degF</td>
-            <td><img src="images/sunny-icon.png" alt=""><br>81 &degF</td>
-            <td><img src="images/sunny-icon.png" alt=""><br>80 &degF</td>
-            <td><img src="images/sunny-icon.png" alt=""><br>82 &degF</td>
-            <td><img src="images/sunny-icon.png" alt=""><br>72 &degF</td>
+            <td><img src="images/sunny-icon.png" alt=""><br>79 &deg;F</td>
+            <td><img src="images/sunny-icon.png" alt=""><br>81 &deg;F</td>
+            <td><img src="images/sunny-icon.png" alt=""><br>80 &deg;F</td>
+            <td><img src="images/sunny-icon.png" alt=""><br>82 &deg;F</td>
+            <td><img src="images/sunny-icon.png" alt=""><br>72 &deg;F</td>
           </tr>
       </table>
     </section>
-    <section class="article">
+    <article>
       <img src="images/hammock-300.jpg" alt="setting up a hammock">
-      <div class="title">Utah Hammock Festival goes for world record</div>
+      <h2>Utah Hammock Festival goes for world record</h2>
       <p>Organizers of the Utah Hammock Festival took a swing at a world record Saturday.</p>
       <p>Hoping to beat the world record for the most number of people in hammocks at the same time, hammockers from all over gathered Saturday morning at the CLAS Ropes Course in Provo. A group in Germany set the current world record in 2016, gathering 269 people in hammocks in Mainz, Germany, west of Frankfurt.</p>
       <p>Edward and Christina Graberitz and their two dogs drove three days from Pennsylvania to participate in the record attempt.</p>
       <a href="https://www.heraldextra.com/news/local/central/provo/utah-hammock-festival-goes-for-world-record/article_3d7d775c-9860-5641-977e-a226b06bdb6d.html">Continue Reading</a>
-    </section>
+    </article>
     <section class="contact">
       <div class="contactInfo">
         <h2>The Weather Site</h2>
@@ -110,8 +103,7 @@
       &copy The Weather Site | Attributions | Brandon Haymore
       <div id="currentdate"></div>
     </footer>
-    <script src="scripts/currentdate.js">
-
-    </script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
   </body>
 </html>

@@ -1,30 +1,35 @@
 body {
   color: #343642;
   font-family: Verdana,Geneva,sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
+
+h1,h2,h3 {
+  font-family: Tahoma,Geneva,sans-serif;
+}
+h1 {
+  font-size: 28px;
+  color: #962d3e;
+  margin: auto;
+}
+h2, h3 {
+  color: black;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 14px;
+}
+
 header {
   padding: 5px;
   background-color: #f2ebc7;
   font-family: Tahoma,Geneva,sans-serif;
-}
-header img {
-  width: 80px;
-  vertical-align: middle;
-}
-.headings {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-  margin-left: 5px;
-}
-.moto {
-  font-family: 'Open Sans', sans-serif;
-  padding: 0;
 }
 nav {
   padding: 10px;
@@ -33,20 +38,20 @@ nav {
 }
 nav ul {
   padding: 0;
-  list-style-type: none;
 }
-nav ul li {
-  padding: 3px;
+nav li {
+  margin: 10px;
 }
 nav a {
   color: #343642;
-  font-size: 20px;
+  font-size: 24px;
   text-decoration: none;
-  padding: 3px;
+  padding: 10px;
 }
 
 nav a:hover {
   background-color: #5c9fad;
+  padding: 10px
 }
 
 .navigation li:first-child {
@@ -59,33 +64,10 @@ nav a:hover {
   display: block;
 }
 
-h1,h2,h3 {
-  font-family: Tahoma,Geneva,sans-serif;
-}
-h1 {
-  font-size: 20px;
-  color: #962d3e;
-  padding: 0px;
-  margin: 0 auto;
-}
-h2, h3 {
-  color: #979c9c;
-}
-h2 {
-  font-size: 20px;
-}
-h3 {
-  font-size: 14px;
-}
-
-.title {
-  margin: 10px;
-  font-size: 20px;
-}
 .selected a {
   color: #5c5e67;
 }
-.summary {
+.weather-summary {
   position: relative;
   color: white;
   margin: auto;
@@ -101,6 +83,7 @@ h3 {
   background-color: #348899;
   opacity: .9;
   padding: 15px;
+  box-shadow: 5px 5px 3px black;
 }
 .currentweather .title {
   font-size: 18px;
@@ -108,6 +91,12 @@ h3 {
   text-underline-position: under;
   padding-bottom: 10px;
   color: black;
+}
+.weather-summary img {
+  max-width: 100%;
+}
+.currentweather .right {
+  color: yellow;
 }
 .right {
   text-align: right;
@@ -120,16 +109,19 @@ h3 {
   display: none;
 }
 
-.article {
+article {
   background-color: #fbf9ee;
-  margin: 20px;
-  padding: 20px;
+  margin: 30px;
+  padding: 30px 20px 20px 20px;
   max-width: 600px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.article p {
+article img {
+  max-width: 100%;
+}
+article p {
   text-align: left;
 }
 
@@ -148,7 +140,7 @@ footer {
   display: inline-block;
   text-align: left;
 }
-.contactInfo,img {
+.contactInfo img {
   padding-right: 5px;
 }
 .map {

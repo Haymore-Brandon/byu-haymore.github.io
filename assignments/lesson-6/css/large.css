@@ -7,6 +7,7 @@
   }
   nav ul li {
     display: inline;
+    margin: 0;
   }
   .navigation li:first-child {
     display: none;
@@ -18,6 +19,7 @@
   }
   .forcast {
     display: inline-block;
+    margin: 30px 0 50px 0;
   }
   .forcast table {
     width: 400px;
@@ -30,10 +32,11 @@
     background-color: #348899;
     margin: 0;
   }
-  .forcast img {
-    max-width: 40px;
-  }
 
+  article {
+    border-style: solid;
+    border-width: 1px;
+  }
   .article img {
     float: right;
     margin-left: 15px;

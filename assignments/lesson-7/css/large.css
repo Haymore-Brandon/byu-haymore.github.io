@@ -1,0 +1,32 @@
+@media (min-width: 800px) {
+  body {
+    max-width: none;
+  }
+  .headings {
+    margin-left: 50px;
+  }
+  nav ul {
+    margin: 0;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+  .navigation li {
+    display: inline-block;
+  }
+  .forecast {
+    display: inline-block;
+  }
+  .forecast table {
+    width: 400px;
+    border-collapse: collapse;
+  }
+  .forecast table, .forecast th, .forecast td{
+    border: 1px solid black;
+    padding: 5px;
+  }
+  .forecast th {
+    background-color: #348899;
+    margin: 0;
+  }
+}

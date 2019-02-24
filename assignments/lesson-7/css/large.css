@@ -6,9 +6,6 @@
   .gallery-container {
     grid-template-columns: repeat(3, 1fr);
   }
-  .gallery-item {
-    box-shadow: 3px 3px 3px  lightgrey;
-  }
   .gallery-item:hover {
     box-shadow: 5px 5px 5px  grey;
   }

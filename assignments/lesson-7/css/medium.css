@@ -38,4 +38,7 @@
   .gallery-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .gallery-item {
+    box-shadow: 3px 3px 3px  lightgrey;
+  }
 }

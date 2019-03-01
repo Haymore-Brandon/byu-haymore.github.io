@@ -1,0 +1,179 @@
+body {
+  color: #343642;
+  font-family: Verdana,Geneva,sans-serif;
+  font-size: 18px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,h2,h3 {
+  font-family: Tahoma,Geneva,sans-serif;
+}
+h1 {
+  font-size: 28px;
+  color: #962d3e;
+  margin: auto;
+}
+h2, h3 {
+  color: black;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 14px;
+}
+
+header {
+  padding: 5px;
+  background-color: #f2ebc7;
+  font-family: Tahoma,Geneva,sans-serif;
+}
+.head-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head-container img {
+  padding-right: 20px;
+}
+nav {
+  background-color: #348899;
+  font-family: Tahoma,Geneva,sans-serif;
+}
+nav ul {
+  padding: 10px;
+  margin: 0;
+}
+nav li {
+  padding: 10px;
+}
+nav a {
+  color: #343642;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #5c9fad;
+  padding: 10px
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.responsive li {
+  display: block;
+}
+
+.selected a {
+  color: #5c5e67;
+}
+.weather-summary {
+  position: relative;
+  color: white;
+  margin: auto;
+  max-width: 800px;
+}
+.left {
+  color: #f2ebc7;
+}
+.currentweather {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #348899;
+  opacity: .9;
+  padding: 15px;
+  box-shadow: 5px 5px 3px black;
+}
+.currentweather .title {
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-position: under;
+  padding-bottom: 10px;
+  color: black;
+}
+.weather-summary img {
+  max-width: 100%;
+}
+.currentweather .right {
+  color: yellow;
+}
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left
+}
+
+.forecast {
+  display: none;
+}
+.gallery-container {
+  display: inline-grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr;
+  padding: 0 0 50px 0;
+}
+.gallery-container img {
+  max-width: 100%;
+}
+.gallery-item {
+  display: grid;
+  padding-bottom: 10px;
+  vertical-align: middle;
+}
+
+article {
+  background-color: #fbf9ee;
+  margin: 30px 0 30px 0;
+  padding: 30px 10px 20px 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 1px;
+}
+article img {
+  max-width: 100%;
+}
+article p, article h2 {
+  text-align: left;
+}
+
+.contact {
+  background-color: #f2ebc7;
+  padding: 10px;
+}
+
+footer {
+  background-color: #343642;
+  color: #fff;
+  padding: 10px;
+  margin: 0 auto;
+}
+.contactInfo {
+  display: inline-block;
+  text-align: left;
+}
+.contactInfo img {
+  padding-right: 5px;
+}
+.map {
+  width: 200px;
+}

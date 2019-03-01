@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="This is a site with current and forecast weather reports for the small towns of Preston, Soda Springs, and Fish Haven in Idaho.">
+    <title>Small Town Weather | Preston</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <header class="head-container">
+        <div class="head-item">
+          <img src="images/weather.png" alt="Weather Icon">
+        </div>
+        <div class="head-item">
+          <h1>Small Town Weather</h1>
+          All The Weather Information You Need
+        </div>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="selected"><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <h2>Preston, Idaho</h2>
+    <div class="weather-summary">
+      <picture>
+        <source media="(max-width: 360px)" srcset="images/landscape-cropped-360.jpg">
+        <source media="(max-width: 600px)" srcset="images/landscape-600.jpg">
+        <source media="(min-width: 601px)" srcset="images/landscape-800.jpg">
+        <img src="images/landscape-800.jpg" alt="Preston Town">
+      </picture>
+      <div class="currentweather">
+        <div class="title">Weather Summary</div>
+        <table>
+          <tr>
+            <td class="right">Currently:</td>
+            <td class="left">Sunny</td>
+          </tr>
+          <tr>
+            <td class="right">High:</td>
+            <td class="left"><span id="airTemp">86</span> &deg;F</td>
+          </tr>
+          <tr>
+            <td class="right">Wind Chill:</td>
+            <td class="left"><span id="windChill"></span> &deg;F</td>
+          </tr>
+          <tr>
+            <td class="right">Humidity:</td>
+            <td class="left">45 %</td>
+          </tr>
+          <tr>
+            <td class="right">Wind Speed:</td>
+            <td class="left"><span id="windSpeed">6</span> mph</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <section class="forecast">
+      <h2>5 Day Forecast</h2>
+      <table>
+          <tr>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+          </tr>
+          <tr>
+            <td><img src="images/sunny-icon.png" alt=""><br>79 &deg;F</td>
+            <td><img src="images/sunny-icon.png" alt=""><br>81 &deg;F</td>
+            <td><img src="images/sunny-icon.png" alt=""><br>80 &deg;F</td>
+            <td><img src="images/sunny-icon.png" alt=""><br>82 &deg;F</td>
+            <td><img src="images/sunny-icon.png" alt=""><br>72 &deg;F</td>
+          </tr>
+      </table>
+    </section>
+    <article>
+      <img src="images/hammock-300.jpg" alt="setting up a hammock">
+      <h2>Utah Hammock Festival goes for world record</h2>
+      <p>Organizers of the Utah Hammock Festival took a swing at a world record Saturday.</p>
+      <p>Hoping to beat the world record for the most number of people in hammocks at the same time, hammockers from all over gathered Saturday morning at the CLAS Ropes Course in Provo. A group in Germany set the current world record in 2016, gathering 269 people in hammocks in Mainz, Germany, west of Frankfurt.</p>
+      <p>Edward and Christina Graberitz and their two dogs drove three days from Pennsylvania to participate in the record attempt.</p>
+      <a href="https://www.heraldextra.com/news/local/central/provo/utah-hammock-festival-goes-for-world-record/article_3d7d775c-9860-5641-977e-a226b06bdb6d.html">Continue Reading</a>
+    </article>
+    <section class="contact">
+      <div class="contactInfo">
+        <h2>The Weather Site</h2>
+        30 N 1st E<br />
+        Preston, ID 83263<br />
+        <br />
+        <img src="images/phone.png" alt="phone icon">999.999.9999<br />
+        <img src="images/email.png" alt="email icon">theweathersite@tws.com<br /><br />
+      </div>
+      <img class="map" src="images/map.png" alt="Map">
+    </section>
+    <footer>
+      &copy; The Weather Site | Attributions | Brandon Haymore
+      <div id="currentdate"></div>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+  </body>
+</html>

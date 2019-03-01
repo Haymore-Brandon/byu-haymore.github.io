@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="A gallery of weather related images from around the area.">
+    <title>Small Town Weather | Weather Gallery</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <header class="head-container">
+        <div>
+          <img src="images/weather.png" alt="Weather Icon">
+        </div>
+        <div>
+          <h1>Small Town Weather</h1>
+          All The Weather Information You Need
+        </div>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="preston-7.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li class="selected"><a href="gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <section class="gallery">
+      <h2>Weather Gallery</h2>
+      <div class="gallery-container">
+        <div class="gallery-item"><img src="images/gallery/bolt-buildings-300.jpg" alt="" />Lorem ipsum dolor sit amet.</div>
+        <div class="gallery-item"><img src="images/gallery/clear-road-300.jpg" alt="" />Lorem ipsum dolor sit amet.</div>
+        <div class="gallery-item"><img src="images/gallery/clouds-mountain-300.jpg" alt="" />Lorem ipsum dolor sit amet.</div>
+        <div class="gallery-item"><img src="images/gallery/fog-path-300.jpg" alt="" />Lorem ipsum dolor sit amet.</div>
+        <div class="gallery-item"><img src="images/gallery/child-snow-300.jpg" alt="" />Lorem ipsum dolor sit amet.</div>
+        <div class="gallery-item"><img src="images/gallery/clouds-horizon-mountains-300.jpg" alt="" />Lorem ipsum dolor sit amet.</div>
+        <div class="gallery-item"><img src="images/gallery/fog-path-2-300.jpg" alt="" />Lorem ipsum dolor sit amet.</div>
+        <div class="gallery-item"><img src="images/gallery/lake-lightning-300.jpg" alt="" />Lorem ipsum dolor sit amet.</div>
+        <div class="gallery-item"><img src="images/gallery/rain-bicycle-300.jpg" alt="" />Lorem ipsum dolor sit amet.</div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="contactInfo">
+        <h2>The Weather Site</h2>
+        30 N 1st E<br />
+        Preston, ID 83263<br />
+        <br />
+        <img src="images/phone.png" alt="phone icon">999.999.9999<br />
+        <img src="images/email.png" alt="email icon">theweathersite@tws.com<br /><br />
+      </div>
+      <img class="map" src="images/map.png" alt="Map">
+    </section>
+    <footer>
+      &copy; The Weather Site | Attributions | Brandon Haymore
+      <div id="currentdate"></div>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+  </body>
+</html>

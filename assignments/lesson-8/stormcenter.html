@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="This is a site with current and forecast weather reports for the small towns of Preston, Soda Springs, and Fish Haven in Idaho.">
+    <title>Small Town Weather | Storm Center</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <header class="head-container">
+        <div class="head-item">
+          <img src="images/weather.png" alt="Weather Icon">
+        </div>
+        <div class="head-item">
+          <h1>Small Town Weather</h1>
+          All The Weather Information You Need
+        </div>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li class="selected"><a href="#">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <h2>Storm Center</h2>
+    <form action="thanks.html" method="get">
+        <div class="form-item">
+          <label for="full-name">Full Name</label>
+          <input type="text" name="full-name" id="full-name" required pattern="[a-zA-Z]*" minlength="5" autofocus>
+        </div>
+        <div class="form-item">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" value="abc@example.com">
+        </div>
+        <div class="form-item">
+          <label for="tel">Phone Number</label>
+          <input type="tel" name="tel" id="tel" required>
+        </div>
+        <div class="form-item">
+          <label for="zip">Zip Code</label>
+          <input type="number" name="zip" id="zip" required>
+        </div>
+        <div class="form-item">
+          <label for="storm-date">Date of Storm</label><br>
+          <input type="date" name="storm-date" id="storm-date">
+        </div>
+        <div class="form-item">
+          <label for="storm-type">Select the type of storm</label>
+          <input name="storm-type" id="storm-type" list="storm-types">
+          <datalist id="storm-types">
+            <option value="Flash Flood">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">
+          </datalist>
+        </div>
+        <div class="form-item">
+          <label for="severity">Storm Severity (1-10)</label>
+          <input type="range" name="severity" id="severity" min="1" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+          <div id="rating-value">5</div>
+        </div>
+        <div class="form-item">
+          <label for="region">Select the Region</label>
+          <select id="region" name="region">
+            <option value="Select Region ..." selected disabled>Select Region ...</option>
+            <option value="Preston">Preston</option>
+            <option value="Soda Springs">Soda Springs</option>
+            <option value="Fish Haven">Fish Haven</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <label>Are you in danger?</label>
+          <div class="radio-choices">
+            <div class="radio-choice">
+              <label for="in-danger-yes">yes</label>
+              <input type="radio" name="in-danger" id="in-danger-yes" value="yes">
+            </div>
+            <div class="radio-choice">
+              <label for="in-danger-maybe">maybe</label>
+              <input type="radio" name="in-danger" id="in-danger-maybe" value="maybe">
+            </div>
+            <div class="radio-choice">
+              <label for="in-danger-no">no</label>
+              <input type="radio" name="in-danger" id="in-danger-no" value="no">
+            </div>
+          </div>
+        </div>
+        <div class="form-item">
+          <label for="comments">Any additonal comments:</label>
+          <textarea name="comments" id="comments"></textarea>
+        </div>
+          <input type="submit">
+    </form>
+    <section class="contact">
+      <div class="contactInfo">
+        <h2>The Weather Site</h2>
+        30 N 1st E<br />
+        Preston, ID 83263<br />
+        <br />
+        <img src="images/phone.png" alt="phone icon">999.999.9999<br />
+        <img src="images/email.png" alt="email icon">theweathersite@tws.com<br /><br />
+      </div>
+      <img class="map" src="images/map.png" alt="Map">
+    </section>
+    <footer>
+      &copy; The Weather Site | Attributions | Brandon Haymore
+      <div id="currentdate"></div>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/severity-range.js"></script>
+  </body>
+</html>

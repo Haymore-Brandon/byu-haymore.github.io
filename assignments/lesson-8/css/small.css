@@ -161,6 +161,40 @@ article p, article h2 {
   padding: 10px;
 }
 
+form {
+  display: inline-block;
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+  width: 30em;
+}
+label, .form-items p{
+  width: 15em;
+  text-align: right;
+  padding-right: 0.5em;
+}
+input, textarea, select {
+  flex: 1 1 auto;
+  height: 1.5em;
+  margin: 5px 0 5px 0;
+}
+div #rating-value {
+  margin-left: 10px;
+}
+.radio-choices {
+  display: flex;
+  flex-direction: column;
+}
+.radio-choice {
+  text-align: right;
+}
+
+textarea {
+  height: 200px;
+}
+
 footer {
   background-color: #343642;
   color: #fff;

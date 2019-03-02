@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="A gallery of weather related images from around the area.">
-    <title>Small Town Weather | Weather Gallery</title>
+    <meta name="description" content="This is a site with current and forecast weather reports for the small towns of Preston, Soda Springs, and Fish Haven in Idaho.">
+    <title>Small Town Weather | Storm Center</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -13,10 +13,10 @@
   </head>
   <body>
     <header class="head-container">
-        <div>
+        <div class="head-item">
           <img src="images/weather.png" alt="Weather Icon">
         </div>
-        <div>
+        <div class="head-item">
           <h1>Small Town Weather</h1>
           All The Weather Information You Need
         </div>
@@ -29,23 +29,13 @@
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="stormcenter.html">Storm Center</a></li>
-        <li class="selected"><a href="gallery.html">Gallery</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </nav>
-    <section class="gallery">
-      <h2>Weather Gallery</h2>
-      <div class="gallery-container">
-        <div class="gallery-item"><img src="images/gallery/bolt-buildings-300.jpg" alt="" />Lorem ipsum dolor sit amet.</div>
-        <div class="gallery-item"><img src="images/gallery/clear-road-300.jpg" alt="" />Lorem ipsum dolor sit amet.</div>
-        <div class="gallery-item"><img src="images/gallery/clouds-mountain-300.jpg" alt="" />Lorem ipsum dolor sit amet.</div>
-        <div class="gallery-item"><img src="images/gallery/fog-path-300.jpg" alt="" />Lorem ipsum dolor sit amet.</div>
-        <div class="gallery-item"><img src="images/gallery/child-snow-300.jpg" alt="" />Lorem ipsum dolor sit amet.</div>
-        <div class="gallery-item"><img src="images/gallery/clouds-horizon-mountains-300.jpg" alt="" />Lorem ipsum dolor sit amet.</div>
-        <div class="gallery-item"><img src="images/gallery/fog-path-2-300.jpg" alt="" />Lorem ipsum dolor sit amet.</div>
-        <div class="gallery-item"><img src="images/gallery/lake-lightning-300.jpg" alt="" />Lorem ipsum dolor sit amet.</div>
-        <div class="gallery-item"><img src="images/gallery/rain-bicycle-300.jpg" alt="" />Lorem ipsum dolor sit amet.</div>
-      </div>
-    </section>
+    <h2>Storm Center</h2>
+    <p>
+      Thank you for submitting your storm report.
+      </p>
     <section class="contact">
       <div class="contactInfo">
         <h2>The Weather Site</h2>
@@ -63,5 +53,6 @@
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/severity-range.js"></script>
   </body>
 </html>

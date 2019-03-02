@@ -2,7 +2,7 @@ function getCurrentDate() {
   var today = new Date();
   var dow = today.getDay();
   var day = today.getDate();
-  var month = today.getMonth() + 1; //January is 0!
+  var month = today.getMonth();
   var year = today.getFullYear();
 
   var weekday = new Array(7);

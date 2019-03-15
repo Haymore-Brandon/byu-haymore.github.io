@@ -1,0 +1,23 @@
+@media (min-width: 800px) {
+  body {
+    max-width: none;
+  }
+
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery-item:hover {
+    box-shadow: 5px 5px 5px  grey;
+  }
+  article {
+    max-width: 800px;
+  }
+
+  .about {
+    max-width: 600px;
+  }
+
+  .town-data {
+    grid-template-columns: 250px 250px 250px;
+  }
+}

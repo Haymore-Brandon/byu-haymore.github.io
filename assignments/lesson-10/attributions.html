@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="This is a site with current and forecast weather reports for the small towns of Preston, Soda Springs, and Fish Haven in Idaho.">
+    <title>Small Town Weather | Preston</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <header class="head-container">
+        <div class="head-item">
+          <img src="images/weather.png" alt="Weather Icon">
+        </div>
+        <div class="head-item">
+          <h1>Small Town Weather</h1>
+          All The Weather Information You Need
+        </div>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <h2>Attributions</h2>
+    <p>Weather forecast images provided by: <a href="https://openweathermap.org">OpenWeatherMap</a></p>
+    <section class="contact">
+      <div class="contactInfo">
+        <h2>Small Town Weather</h2>
+        30 N 1st E<br />
+        Preston, ID 83263<br />
+        <br />
+        <img src="images/phone.png" alt="phone icon">999.999.9999<br />
+        <img src="images/email.png" alt="email icon">theweathersite@tws.com<br /><br />
+      </div>
+      <img class="map" src="images/map.png" alt="Map">
+    </section>
+    <footer>
+      &copy; Small Town Weather | Attributions | Brandon Haymore
+      <div id="currentdate"></div>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weatherapi.js"></script>
+  </body>
+</html>

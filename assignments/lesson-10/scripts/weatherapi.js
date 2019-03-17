@@ -30,15 +30,13 @@ forecastRequest.open('GET', forecastApiURLstring, true);
 forecastRequest.send();
 forecastRequest.onload = function() {
   let fd = JSON.parse(forecastRequest.response);
-  var forecastTemps = [];
-  var forecastDays = [];
-  var forecastImg = [];
-  var forecastDesc = [];
+  let forecastTemps = [];
+  let forecastDays = [];
+  let forecastImg = [];
+  let forecastDesc = [];
 
   let day = 0;
   let dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-
-  console.log(fd);
 
   fd.list.forEach(hour => {
     if (hour.dt_txt.includes("18:00:00")) {
@@ -47,10 +45,6 @@ forecastRequest.onload = function() {
       forecastDays[day] = dayNames[d.getDay()];
       forecastImg[day] = hour.weather[0].icon;
       forecastDesc[day] = hour.weather[0].description;
-      console.log(hour.dt_txt);
-      console.log(d.getDay());
-      console.log(hour.weather[0].icon);
-      console.log(hour.weather[0].description);
       day++;
     }
   });

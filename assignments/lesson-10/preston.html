@@ -45,11 +45,11 @@
         <table>
           <tr>
             <td class="right">Currently:</td>
-            <td class="left">Sunny</td>
+            <td class="left"><span id="currentDisc"></span></td>
           </tr>
           <tr>
             <td class="right">High:</td>
-            <td class="left"><span id="airTemp">86</span> &deg;F</td>
+            <td class="left"><span id="high"></span> &deg;F</td>
           </tr>
           <tr>
             <td class="right">Wind Chill:</td>
@@ -57,11 +57,11 @@
           </tr>
           <tr>
             <td class="right">Humidity:</td>
-            <td class="left">45 %</td>
+            <td class="left"><span id="humidity"></span> %</td>
           </tr>
           <tr>
             <td class="right">Wind Speed:</td>
-            <td class="left"><span id="windSpeed">6</span> mph</td>
+            <td class="left"><span id="windSpeed"></span> mph</td>
           </tr>
         </table>
       </div>
@@ -70,18 +70,18 @@
       <h2>5 Day Forecast</h2>
       <table>
           <tr>
-            <th>Wed</th>
-            <th>Thu</th>
-            <th>Fri</th>
-            <th>Sat</th>
-            <th>Sun</th>
+            <th><span id="day0"></span></th>
+            <th><span id="day1"></span></th>
+            <th><span id="day2"></span></th>
+            <th><span id="day3"></span></th>
+            <th><span id="day4"></span></th>
           </tr>
           <tr>
-            <td><img src="images/sunny-icon.png" alt=""><br>79 &deg;F</td>
-            <td><img src="images/sunny-icon.png" alt=""><br>81 &deg;F</td>
-            <td><img src="images/sunny-icon.png" alt=""><br>80 &deg;F</td>
-            <td><img src="images/sunny-icon.png" alt=""><br>82 &deg;F</td>
-            <td><img src="images/sunny-icon.png" alt=""><br>72 &deg;F</td>
+            <td><img id="img0" src="" alt=""><br><span id="tempDay0"></span> &deg;F</td>
+            <td><img id="img1" src="" alt=""><br><span id="tempDay1"></span> &deg;F</td>
+            <td><img id="img2" src="" alt=""><br><span id="tempDay2"></span> &deg;F</td>
+            <td><img id="img3" src="" alt=""><br><span id="tempDay3"></span> &deg;F</td>
+            <td><img id="img4" src="" alt=""><br><span id="tempDay4"></span> &deg;F</td>
           </tr>
       </table>
     </section>
@@ -110,6 +110,6 @@
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weatherapi.js"></script>
   </body>
 </html>

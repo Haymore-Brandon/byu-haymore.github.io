@@ -245,11 +245,11 @@ footer {
   display: grid;
   justify-content: center;
   grid-gap: 5px;
-  grid-template-columns: 250px;
+  grid-template-columns: 100%;
   margin: 10px 0 20px 0;
 }
 .town-item {
-  border-style: outset;
+  border-style: groove;
 
 }
 

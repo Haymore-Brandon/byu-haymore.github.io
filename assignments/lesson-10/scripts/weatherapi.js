@@ -1,6 +1,6 @@
 // current weather
 
-weatherApiURLstring = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=b72b6b2f9dc4372d814dc544b8f4f970";
+weatherApiURLstring = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=b72b6b2f9dc4372d814dc544b8f4f970";
 
 let weatherRequest = new XMLHttpRequest();
 weatherRequest.open('GET', weatherApiURLstring, true);
@@ -24,7 +24,7 @@ function chillTemp (airTemp, windSpeed) {
 }
 
 // forecast weather
-forecastApiURLstring = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=b72b6b2f9dc4372d814dc544b8f4f970";
+forecastApiURLstring = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=b72b6b2f9dc4372d814dc544b8f4f970";
 let forecastRequest = new XMLHttpRequest();
 forecastRequest.open('GET', forecastApiURLstring, true);
 forecastRequest.send();

@@ -51,7 +51,7 @@ forecastRequest.onload = function() {
 
   for (let i = 0; i < 5; i++) {
     document.getElementById('day' + i).innerHTML = forecastDays[i];
-    document.getElementById('img' + i).setAttribute('src', 'http://openweathermap.org/img/w/' + forecastImg[i] + '.png');
+    document.getElementById('img' + i).setAttribute('src', 'https://openweathermap.org/img/w/' + forecastImg[i] + '.png');
     document.getElementById('img' + i).setAttribute('alt', forecastDesc[i]);
     document.getElementById('tempDay' + i).innerHTML = forecastTemps[i].toFixed(0);
   }

@@ -3,7 +3,7 @@ let townID = {
   "Soda Springs": 5607916,
   "Fish Haven": 5585000
 }
-let currentTown = document.getElementById('currentTown').innerHTML;
+var currentTown = document.getElementById('currentTown').innerHTML;
 
 weatherApiURLstring = "https://api.openweathermap.org/data/2.5/weather?id=" + townID[currentTown] + "&units=imperial&APPID=b72b6b2f9dc4372d814dc544b8f4f970";
 

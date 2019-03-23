@@ -12,8 +12,6 @@ request.onload = function() {
 
 function populateTownData (jsonObj) {
   var towns = jsonObj['towns'];
-  // var image;
-  // var imageAlt;
   for (var i = 0; i < towns.length; i++) {
     var town = towns[i];
     if (townList.includes(towns[i]['name'])) {

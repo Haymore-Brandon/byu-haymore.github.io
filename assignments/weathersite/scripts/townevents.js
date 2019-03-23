@@ -1,5 +1,5 @@
 const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
-let currentTown = document.getElementById('currentTown').innerHTML;
+var currentTown = document.getElementById('currentTown').innerHTML;
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -15,11 +15,9 @@ function populateEvents(jsonObj, currentTown) {
     townName = towns[i].name;
     if ( townName == currentTown) {
       let events = towns[i].events;
-      console.log(events);
       for (let e = 0; e < events.length; e++) {
         let par = document.createElement('p');
         par.textContent = events[e];
-        console.log(events[e]);
         document.getElementById('town-events').appendChild(par);
       }
     }

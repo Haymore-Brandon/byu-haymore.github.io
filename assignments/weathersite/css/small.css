@@ -1,0 +1,269 @@
+/* Body Stuff */
+body {
+  color: #343642;
+  font-family: Verdana,Geneva,sans-serif;
+  font-size: 18px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,h2,h3 {
+  font-family: Tahoma,Geneva,sans-serif;
+}
+h1 {
+  font-size: 28px;
+  color: #962d3e;
+  margin: auto;
+}
+h2, h3 {
+  color: black;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 14px;
+}
+
+/* Header */
+header {
+  padding: 5px;
+  background-color: #f2ebc7;
+  font-family: Tahoma,Geneva,sans-serif;
+}
+.head-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head-container img {
+  padding-right: 20px;
+}
+
+/* Navigation */
+nav {
+  background-color: #348899;
+  font-family: Tahoma,Geneva,sans-serif;
+}
+nav ul {
+  padding: 10px;
+  margin: 0;
+}
+nav li {
+  padding: 10px;
+}
+nav a {
+  color: #343642;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #5c9fad;
+  padding: 10px
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.responsive li {
+  display: block;
+}
+
+.selected a {
+  color: #5c5e67;
+}
+
+/* Weather Summary */
+.weather-summary {
+  position: relative;
+  color: white;
+  margin: auto;
+  max-width: 800px;
+}
+.left {
+  color: #f2ebc7;
+}
+.currentweather {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #348899;
+  opacity: .9;
+  padding: 15px;
+  box-shadow: 5px 5px 3px black;
+}
+.currentweather .title {
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-position: under;
+  padding-bottom: 10px;
+  color: black;
+}
+.weather-summary img {
+  max-width: 100%;
+}
+.currentweather .right {
+  color: yellow;
+}
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left
+}
+
+/* Forcast */
+.forecast {
+  display: none;
+}
+
+/* Gallery */
+.gallery-container {
+  display: inline-grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr;
+  padding: 0 0 50px 0;
+}
+.gallery-container img {
+  max-width: 100%;
+}
+.gallery-item {
+  display: grid;
+  padding-bottom: 10px;
+  vertical-align: middle;
+}
+
+/* Articles */
+article {
+  background-color: #fbf9ee;
+  margin: 30px 0 30px 0;
+  padding: 30px 10px 20px 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 1px;
+}
+article img {
+  max-width: 100%;
+}
+article p, article h2 {
+  text-align: left;
+}
+
+/* Contact Block */
+.contact {
+  background-color: #f2ebc7;
+  padding: 10px;
+}
+
+/* Form */
+form {
+  display: inline-block;
+}
+fieldset {
+  margin: 20px 0 20px 0;
+}
+input:required {
+  border-right: 3px solid red;
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+  width: 30em;
+}
+label, .form-items p{
+  width: 15em;
+  text-align: right;
+  padding-right: 0.5em;
+}
+input, textarea, select {
+  flex: 1 1 auto;
+  height: 1.5em;
+  margin: 5px 0 5px 0;
+}
+div #rating-value {
+  margin-left: 10px;
+}
+.radio-choices {
+  display: flex;
+  flex-direction: column;
+}
+.radio-choice {
+  text-align: right;
+}
+
+textarea {
+  height: 150px;
+  width: 80%;
+}
+
+/* Footer */
+footer {
+  background-color: #343642;
+  color: #fff;
+  padding: 10px;
+  margin: 0 auto;
+}
+.contactInfo {
+  display: inline-block;
+  text-align: left;
+}
+.contactInfo img {
+  padding-right: 5px;
+}
+.map {
+  width: 200px;
+  border-style: groove;
+  border-width: 5px;
+  margin: 10px;
+}
+
+.regional-article {
+  display: inline-block;
+  max-width: 600px;
+  border-style: ridge;
+}
+
+.town-data {
+  display: grid;
+  justify-content: center;
+  grid-gap: 5px;
+  grid-template-columns: 100%;
+  margin: 10px 0 20px 0;
+}
+.town-item {
+  border-style: groove;
+
+}
+
+.town-item h2 {
+  color: #962d3e;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.town-item h3 {
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.town-stats p {
+  margin: 5px 0 5px 0;
+}

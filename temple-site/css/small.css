@@ -1,0 +1,292 @@
+body {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: 'Oleo Script', cursive;
+  font-size: 50px;
+  color: #76323F
+}
+h2 {
+  color: #7B5A3D;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-color: #D7CEC7;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  text-align: center;
+}
+header img{
+  display: block;
+  margin: 10px auto;
+}
+.center {
+  text-align: center;
+}
+
+/* Navigation */
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav li {
+  padding: 10px;
+  font-size: 35px;
+}
+.navContainer li:first-child {
+  display: block;
+}
+.navContainer li {
+  display: none;
+}
+.responsive li {
+  display: block;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.selected {
+  background-color: #ACA59F;
+  color: white;
+}
+nav li:hover {
+  background-color: #D7CEC7;
+  color: white;
+}
+
+/* Main Body */
+.banner img{
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.homeContent {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  grid-gap: 20px;
+  padding: 20px 30px;
+}
+
+.templeContent {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  grid-gap: 20px;
+  padding: 20px 30px;
+}
+.templeContent a {
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #D7CEC7;
+}
+.templeContent a:hover {
+  box-shadow: 10px 10px 5px grey;
+}
+.templeContent section {
+  text-align: center;
+  padding: 10px;
+}
+.templeContent img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Featured Location */
+.featuredContainer {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 20px;
+  padding: 20px;
+}
+.featuredLocation {
+  grid-row: 1 / 3;
+  padding: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #D7CEC7;
+}
+h3 {
+  text-align: center;
+}
+.featuredContainer img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  grid-row: 2;
+}
+.services {
+  grid-row: 3;
+}
+
+.facts {
+  display: block;
+  margin: 0 auto;
+}
+
+.featuredContainer .facts {
+  grid-row: 4;
+}
+
+/* Check Availability */
+.checkAvailability {
+  padding: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #D7CEC7;
+}
+.availability {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 16px;
+  align-items: center;
+}
+label {
+  text-align: right;
+}
+.availability input[type=submit] {
+  margin-top: 15px;
+  grid-column: 1 / 3;
+}
+
+
+/* Temple Page Content */
+.templeSummary {
+  display: block;
+  margin: auto;
+  text-align: center;
+  max-width: 800px;
+}
+.templeContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  text-align: center;
+  justify-content: center;
+  grid-gap: 20px;
+}
+.templeContainer img {
+  grid-column: 1 / 3;
+  margin: auto;
+  max-width: 100%;
+}
+.currentWeather {
+  display: grid;
+  grid-template-columns: 130px 100px;
+  align-content: center;
+  justify-content: center;
+  grid-gap: 5px;
+  margin: 20px auto;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #D7CEC7;
+  max-width: 200px;
+  padding: 20px;
+}
+.currentWeather p {
+  margin: 0 auto;
+}
+.currentWeather .left {
+  font-weight: bold;
+}
+.templeAddress {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #D7CEC7;
+}
+.templeServices {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #D7CEC7;
+}
+.templeSchedule {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #D7CEC7;
+}
+.templeClosure {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #D7CEC7;
+}
+
+
+
+/* Reservations Page */
+.reservation {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  max-width: 80%;
+  align-items: center;
+  grid-gap: 20px;
+  margin: 50px auto;
+}
+.reservation input[type=submit] {
+  grid-column: 1 / 3;
+  max-width: 50%;
+  margin: 0 auto;
+}
+fieldset {
+  margin: 30px auto;
+  max-width: 100%;
+}
+
+/* Services Page */
+.primaryServices {
+  display: grid;
+  grid-template-columns: 100%;
+}
+.primaryServices .item {
+  display: block;
+  margin: 0 auto;
+}
+.services {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.amenities {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+}
+.item img {
+  display: block;
+  margin: auto;
+}
+
+/* Contact Us Page */
+.contactUs {
+  display: grid;
+  grid-template-columns: auto;
+}
+.contactUs img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+
+/* Footer */
+footer {
+  background-color: #D7CEC7;
+  display: grid;
+  grid-template-columns: auto;
+  grid-column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+footer img {
+  display: block;
+  max-width: 100%;
+}
+footer p:last-of-type {
+  text-align: center;
+}

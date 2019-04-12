@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="The Temple Inn &amp; Suites is a hotel chain that specializes in catering to visitors of Ladder-Day Saint temple visitors.">
+    <title>Temple Inn &amp; Suites | San Diego, CA Temple</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body>
+    <header>
+      <img src="images/logo-200.jpg" alt="Temple Inn &amp; Suites Logo">
+      <h1>Temple Inn &amp; Suites</h1>
+    </header>
+    <nav>
+      <ul class="navContainer">
+        <li><a href="#" onclick="toggleMenu()"><img src="images/navicon-40.png" alt="navicon menu">Menu</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h2 id="temple">San Diego, CA Temple</h2>
+    <div class="banner">
+      <picture>
+        <source media="(max-width: 300px)" srcset="images/temples/san-diego-california-temple-300.jpg">
+        <source media="(max-width: 400px)" srcset="images/temples/san-diego-california-temple-400.jpg">
+        <source media="(min-width: 401px" srcset="images/temples/san-diego-california-temple-600.jpg">
+        <img src="images/temples/san-diego-california-temple-600.jpg" alt="San Diego Temple">
+      </picture>
+    </div>
+    <p>The San Diego California Temple was the third temple built in California, following the Los Angeles California Temple (1956) and the Oakland California Temple (1964).</p>
+
+    <p>The architects for the San Diego California Temple were William S. Lewis, Jr., design architect; Dennis Hyndman, project architect; and Shelly Hyndman, interior design architect. The Hyndmans, who are Roman Catholic, had not toured the interior of a Latter-day Saint temple until the Las Vegas Nevada Temple open house commenced in 1989.</p>
+    <div class="templeContainer">
+      <section class="templeAddress">
+        <h2>Address</h2>
+        <p>7474 Charmant Drive
+          San Diego, California  92122-5000
+          United States
+        </p>
+        <p>(+1) 858-622-0991</p>
+      </section>
+      <section class="templeServices">
+        <h2>Services</h2>
+        <p>Clothing rental available<br />
+          Cafeteria available<br />
+          NO patron housing available<br />
+          Distribution center nearby</p>
+      </section>
+      <section class="templeSchedule">
+        <h2>Endowment Schedule</h2>
+        <p>8:00 AM - Walk-ins and Appointments<br />
+        9:00 AM - Walk-ins and Appointments<br />
+        9:30 AM - Walk-ins and Appointments<br />
+        10:00 AM - Walk-ins and Appointments<br />
+        11:00 AM - Walk-ins and Appointments<br />
+        12:00 PM - Walk-ins and Appointments<br />
+        1:00 PM - Walk-ins and Appointments<br />
+        2:00 PM - Walk-ins and Appointments<br />
+        3:00 PM - Walk-ins and Appointments<br />
+        4:00 PM - Walk-ins and Appointments<br />
+        5:00 PM - Walk-ins and Appointments<br />
+        6:00 PM - Walk-ins and Appointments<br />
+        6:30 PM - Walk-ins and Appointments (ASL)<br />
+        7:00 PM - Walk-ins and Appointments<br />
+        7:30 PM - Walk-ins and Appointments</p>
+        <p>
+          To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (+1) 858-622-0991
+        </p>
+      </section>
+      <section class="templeClosure">
+        <h2>Closures</h2>
+        <div id="closures"></div>
+      </section>
+    </div>
+    <section class="templeHistory">
+      <h2>History</h2>
+      <h3>Temple Locale</h3>
+      <p>Situated near the upscale community of La Jolla in San Diego, the striking double towers of the San Diego California Temple soar above I-5 in heavily populated Southern California. Connecting the towers at the center is a supernal star-shaped atrium filled with a healthy, colorful garden. The atrium is accessed from the breathtaking two-story Celestial Room filled with towering art glass, suspended light fixtures, and featuring a grand staircase to an upper-level balcony. The public is invited to tour the manicured temple grounds and a visitors' center honoring the San Diego Mormon Battalion, located 10 miles south of the temple in Old Town San Diego.</p>
+    </section>
+    <h2>Local Weather</h2>
+    <div class="currentWeather">
+      <p class="left">Currently:</p>
+      <p><span id="currentDisc"></span></p>
+      <p class="left">High:</p>
+      <p><span id="high"></span> &deg;F</p>
+      <p class="left">Wind Chill:</p>
+      <p><span id="windChill"></span> &deg;F</p>
+      <p class="left">Humidity:</p>
+      <p><span id="humidity"></span> %</p>
+      <p class="left">Wind Speed:</p>
+      <p><span id="windSpeed"></span> mph</p>
+    </div>
+    <footer>
+      <p>
+        Temple Inn &amp; Suites<br />
+        4800 Montgomery Ln.<br />
+        #300<br />
+        Bethesda, MD 20814
+      </p>
+      <img src="images/map-300.jpg" alt="Map of Headquarters">
+      <p>Copyright &copy; 2014 - 2019 | Temple Inn &amp; Suites | <a href="attributions.html">Attributions</a></p>
+    </footer>
+    <script src="scripts/weatherapi.js"></script>
+    <script src="scripts/closures.js"></script>
+    <script src="scripts/hamburger.js"></script>
+  </body>
+</html>

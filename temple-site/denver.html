@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="The Temple Inn &amp; Suites is a hotel chain that specializes in catering to visitors of Ladder-Day Saint temple visitors.">
+    <title>Temple Inn &amp; Suites | Denver, CO Temple</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body>
+    <header>
+      <img src="images/logo-200.jpg" alt="Temple Inn &amp; Suites Logo">
+      <h1>Temple Inn &amp; Suites</h1>
+    </header>
+    <nav>
+      <ul class="navContainer">
+        <li><a href="#" onclick="toggleMenu()"><img src="images/navicon-40.png" alt="navicon menu">Menu</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h2 id="temple">Denver, CO Temple</h2>
+    <div class="banner">
+      <picture>
+        <source media="(max-width: 300px)" srcset="images/temples/denver-colorado-temple-grounds-300.jpg">
+        <source media="(max-width: 400px)" srcset="images/temples/denver-colorado-temple-grounds-400.jpg">
+        <source media="(min-width: 401px)" srcset="images/temples/denver-colorado-temple-grounds-600.jpg">
+        <img src="images/temples/denver-colorado-temple-grounds-600.jpg" alt="Denver Temple">
+      </picture>
+    </div>
+    <p class="center">The Denver Colorado Temple was the first temple built in Colorado. Historical records indicate that in 1858, the S. M. Rooker family—a Mormon family from Utah—was the first to settle at the site that later became Denver.</p>
+    <div class="templeContainer">
+      <section class="templeAddress">
+        <h2>Address</h2>
+        <p>2001 East Phillips Circle<br />
+          Centennial, Colorado  80122<br />
+          United States
+        </p>
+        <p>(+1) 303-730-0220</p>
+      </section>
+      <section class="templeServices">
+        <h2>Services</h2>
+        <p>Clothing rental available<br />
+          NO cafeteria available<br />
+          NO patron housing available<br />
+          Distribution center nearby</p>
+      </section>
+      <section class="templeSchedule">
+        <h2>Endowment Schedule</h2>
+        <p>8:00 AM - Walk-ins Only<br />
+        9:00 AM - Walk-ins Only<br />
+        9:30 AM - Walk-ins Only<br />
+        10:00 AM - Walk-ins Only<br />
+        11:00 AM - Walk-ins Only<br />
+        12:00 PM - Walk-ins Only<br />
+        1:00 PM - Walk-ins Only<br />
+        1:00 PM - Walk-ins Only<br />
+        2:00 PM - Walk-ins Only<br />
+        3:00 PM - Walk-ins Only<br />
+        4:00 PM - Walk-ins Only<br />
+        5:00 PM - Walk-ins Only<br />
+        6:00 PM - Walk-ins Only<br />
+        6:30 PM - Walk-ins Only<br />
+        7:00 PM - Walk-ins Only<br />
+        7:30 PM - Walk-ins Only</p>
+        <p>
+          To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (+1) 303-730-0220
+        </p>
+      </section>
+      <section class="templeClosure">
+        <h2>Closures</h2>
+        <div id="closures"></div>
+      </section>
+    </div>
+    <section class="templeHistory">
+      <h2>History</h2>
+      <p>In an act of hope and faith, one Denver-area stake started a temple fund years before the Denver Colorado Temple was announced, gathering enough donations to meet its assessment for the construction of the temple far ahead of time.</p>
+
+      <p>Securing a suitable site for the Denver Colorado Temple proved difficult. When the originally preferred site became unavailable, two other sites were considered, but both were blocked by traffic-concerned citizens. In the meantime, the original site opened again, and the Church successfully employed lessons learned to gain citizen support for the temple at the preferred location.</p>
+
+      <p>Neighbors initially rejected the proposed nightly floodlighting of the Denver Colorado Temple. So, Church officials agreed to turn off the lights by 11:00 PM. In time, however, the neighbors came to appreciate the singular beauty of the temple and asked that the lights remain on all night.</p>
+
+      <p>During the three-week public open house of the Denver Colorado Temple, approximately 140,000 visitors toured the building—far more than expected—resulting in the placement of 17,000 copies of the Book of Mormon to members of other faiths and 27,500 guest response cards.</p>
+
+      <p>Set aglow each night, the Denver Colorado Temple is—as President Ezra Taft Benson described at the cornerstone ceremony for the temple—a "beacon to members and nonmembers alike…a constant, visible symbol that God has not left man to grope in darkness."</p>
+
+      <p>More than 28,000 members attended the 19 dedicatory services of the Denver Colorado Temple where they were honored to hear addresses from numerous authorities in the general leadership of the Church including the First Presidency, ten of the twelve Apostles, ten members of the First Quorum of the Seventy, and Bishop Henry B. Eyring of the Presiding Bishopric.</p>
+
+      <p>In addition to Colorado, the Denver Colorado Temple District originally covered portions of several western and midwestern states including Wyoming, North Dakota, South Dakota, Nebraska, Kansas, Oklahoma, and New Mexico.</p>
+
+      <p>At a centennial celebration of the Church in Colorado, held September 13, 1997, President Gordon B. Hinckley was presented a pair of Colorado blue spruce trees. He, in turn, presented the trees to Denver Colorado Temple President Russell C. Taylor to plant on the temple grounds. "If you want to call them the Hinckley trees, it's all right with me," he said.</p>
+
+      <p>The Denver Colorado Temple closed on August 15, 2011, for a six-week renovation project, which included modernization of the heating and air conditioning systems, roof work, new carpet, conversion of a sealing room into a sealing office, and conversion of the dining room and kitchen into a nonpatron waiting room and temple worker break room.</p>
+    </section>
+    <h2>Local Weather</h2>
+    <div class="currentWeather">
+      <p class="left">Currently:</p>
+      <p><span id="currentDisc"></span></p>
+      <p class="left">High:</p>
+      <p><span id="high"></span> &deg;F</p>
+      <p class="left">Wind Chill:</p>
+      <p><span id="windChill"></span> &deg;F</p>
+      <p class="left">Humidity:</p>
+      <p><span id="humidity"></span> %</p>
+      <p class="left">Wind Speed:</p>
+      <p><span id="windSpeed"></span> mph</p>
+    </div>
+    <footer>
+      <p>
+        Temple Inn &amp; Suites<br />
+        4800 Montgomery Ln.<br />
+        #300<br />
+        Bethesda, MD 20814
+      </p>
+      <img src="images/map-300.jpg" alt="Map of Headquarters">
+      <p>Copyright &copy; 2014 - 2019 | Temple Inn &amp; Suites | <a href="attributions.html">Attributions</a></p>
+    </footer>
+    <script src="scripts/weatherapi.js"></script>
+    <script src="scripts/closures.js"></script>
+    <script src="scripts/hamburger.js"></script>
+  </body>
+</html>

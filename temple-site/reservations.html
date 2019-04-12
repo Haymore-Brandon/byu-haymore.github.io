@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="The Temple Inn &amp; Suites is a hotel chain that specializes in catering to visitors of Ladder-Day Saint temple visitors.">
+    <title>Temple Inn &amp; Suites | Reservations</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body>
+    <header>
+      <img src="images/logo-200.jpg" alt="Temple Inn &amp; Suites Logo">
+      <h1>Temple Inn &amp; Suites</h1>
+    </header>
+    <nav>
+      <ul class="navContainer">
+        <li><a href="#" onclick="toggleMenu()"><img src="images/navicon-40.png" alt="navicon menu">Menu</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li class="selected"><a href="reservations.html">Reservations</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="banner">
+      <picture>
+        <source media="(max-width: 350px)" srcset="images/calendar-350.jpg">
+        <source media="(max-width: 600px)" srcset="images/calendar-600.jpg">
+        <source media="(min-width: 601px)" srcset="images/calendar-1200.jpg">
+        <img src="images/calendar-1200.jpg" alt="Calendar">
+      </picture>
+    </div>
+    <h2>Reservations</h2>
+      <form action="thank-you.html" method="post">
+        <fieldset>
+          <legend>Trip Details</legend>
+          <div class="reservation">
+            <label for="locationList">Location</label>
+            <select name="locationList" size="1">
+              <option value="selectLocation" selected disabled>Select Location</option>
+              <option value="gilbertAZ">Gilbert, AZ</option>
+              <option value="tucsonAZ">Tucson, AZ</option>
+              <option value="denverCO">Denver, CO</option>
+              <option value="sandiegoCA">San Diego, CA</option>
+            </select>
+            <label for="number">How many in your party</label>
+            <input type="number" name="how-many" id="how-many" min="0" max="7">
+            <label for="type">Type of room</label>
+            <select class="type" name="type" id="type">
+              <option value="roomType" selected disabled>Room Type</option>
+              <option value="suite">Suite</option>
+              <option value="grand">Grand</option>
+              <option value="deluxe">Deluxe</option>
+            </select>
+            <label for="startDate">Arival Date</label>
+            <input type="date" name="startDate" id="startDate" value="">
+            <label for="endDate">Departure Date</label>
+            <input type="date" name="endDate" id="endDate" value="">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Contact Information</legend>
+          <div class="reservation">
+
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" value="">
+
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" value="">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" value="">
+
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" value="">
+
+            <label for="homeState">Home State or Country</label>
+            <input type="text" name="homeState" id="homeState" value="">
+
+            <label for="accommodations">Accommodations or Comments</label>
+            <textarea name="accommodations" id="accommodations" rows="8" cols="80"></textarea>
+
+            <input type="submit" value="Check Availability">
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <footer>
+      <p>
+        Temple Inn &amp; Suites<br />
+        4800 Montgomery Ln.<br />
+        #300<br />
+        Bethesda, MD 20814
+      </p>
+      <img src="images/map-300.jpg" alt="Map of Headquarters">
+      <p>Copyright &copy; 2014 - 2019 | Temple Inn &amp; Suites | <a href="attributions.html">Attributions</a></p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+  </body>
+</html>

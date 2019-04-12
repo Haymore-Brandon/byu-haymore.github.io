@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="The Temple Inn &amp; Suites is a hotel chain that specializes in catering to visitors of Ladder-Day Saint temple visitors.">
+    <title>Temple Inn &amp; Suites | Tucson, AZ Temple</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body>
+    <header>
+      <img src="images/logo-200.jpg" alt="Temple Inn &amp; Suites Logo">
+      <h1>Temple Inn &amp; Suites</h1>
+    </header>
+    <nav>
+      <ul class="navContainer">
+        <li><a href="#" onclick="toggleMenu()"><img src="images/navicon-40.png" alt="navicon menu">Menu</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h2 id="temple">Tucson, AZ Temple</h2>
+    <div class="banner">
+      <picture>
+        <source media="(max-width: 300px)" srcset="images/temples/tucson-arizona-temple-exterior-300.jpg">
+        <source media="(max-width: 400px)" srcset="images/temples/tucson-arizona-temple-exterior-400.jpg">
+        <source media="(min-width: 401px" srcset="images/temples/tucson-arizona-temple-exterior-600.jpg">
+        <img src="images/temples/tucson-arizona-temple-exterior-600.jpg" alt="Mesa Temple">
+      </picture>
+    </div>
+    <p>The Tucson Arizona Temple will be the sixth temple built in Arizona, following the Mesa Arizona Temple (1927), the Snowflake Arizona Temple (2002), The Gila Valley Arizona Temple (2010), the Gilbert Arizona Temple (2014), and the Phoenix Arizona Temple (2014).</p>
+    <p>Cactus plants at the Tucson Arizona Temple site were transplanted to an on-site nursery and reintegrated into the final landscaping.</p>
+
+</p>
+    <div class="templeContainer">
+      <section class="templeAddress">
+        <h2>Address</h2>
+        <p>7281 North Skyline Dr
+          Tucson AZ 85718
+          United States
+        </p>
+        <p>(1) 520-395-3900</p>
+      </section>
+      <section class="templeServices">
+        <h2>Services</h2>
+        <p>No clothing rental available<br />
+          No cafeteria available<br />
+          No patron housing available<br />
+          Distribution center nearby</p>
+      </section>
+      <section class="templeSchedule">
+        <h2>Endowment Schedule</h2>
+        <p>8:00 AM - 7:00PM (every hour)<br />
+        Walk-ins Only - English</p>
+        <p>
+          To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 520-395-3900
+        </p>
+      </section>
+      <section class="templeClosure">
+        <h2>Closures</h2>
+        <div id="closures"></div>
+      </section>
+    </div>
+    <section class="templeHistory">
+      <h2>History</h2>
+      <h3>Angel Moroni Raising</h3>
+      <p>The angel Moroni was placed atop the dome of the Tucson Arizona Temple on July 7, 2016.</p>
+
+      <h3>Groundbreaking Ceremony</h3>
+      <p>On Saturday, October 17, President Dieter F. Uchtdorf, second counselor in the First Presidency, presided at the groundbreaking ceremony for the Tucson Arizona Temple. Services were broadcast live to area meetinghouses in English and in Spanish.</p>
+
+      <h3>Construction Approval</h3>
+      <p>In February 2013, a Church project manager submitted preliminary plans to Pima County to propose making Church-owned property in the Catalina Foothills, where East Ina Road curves into Skyline Drive, the site for the Tucson Arizona Temple. The 7-acre site was purchased by the Church in 2010, and a residence to the north was subsequently acquired.</p>
+
+      <p>The documents included surveys and environmental studies plus site and floor plans that used a rendering of a two-story, 34,000-square-foot mission-style building to represent the Tucson Arizona Temple. Plans proposed a 260-space parking lot with large areas of natural desert open space to provide a buffer for the surrounding neighborhood. No rezoning was required for the site, as it is already zoned to allow religious buildings.</p>
+
+      <p>The Shadow Roc Homeowners Association—the neighborhood where the proposed site is located—previously opposed an office development at that location. But association president, Stan Kartchner, himself a member of the Church, responded favorably to the temple plans. He indicated that a temple is "one of the more favorable uses we could imagine" for the property. He expressed his desire for Church representatives to open a dialogue with neighbors as the plans progress.</p>
+
+      <h3>Temple Design</h3>
+      <p>The Tucson Arizona Temple was originally designed with a 95-foot steeple, which would have required a special permit. However, plans were altered, and the steeple was replaced with a dome-shaped cupola—reminiscent of the famous dome that crowns Italy's Florence Cathedral—which does comply with Pima County planning and zoning regulations.</p>
+
+      <h3>Temple Site</h3>
+      <p>The site for the Tucson Arizona Temple is located in the Catalina Foothills where East Ina Road curves into Skyline Drive.</p>
+
+      <h3>Temple Announcement</h3>
+      <p>On October 6, 2012, President Thomas S. Monson announced plans for a temple to be built in Tucson, Arizona—Arizona's second largest city—during his opening remarks of the 182nd Semiannual General Conference. There are approximately 400,000 members of the Church in Arizona.2</p>
+    </section>
+    <h2>Local Weather</h2>
+    <div class="currentWeather">
+      <p class="left">Currently:</p>
+      <p><span id="currentDisc"></span></p>
+      <p class="left">High:</p>
+      <p><span id="high"></span> &deg;F</p>
+      <p class="left">Wind Chill:</p>
+      <p><span id="windChill"></span> &deg;F</p>
+      <p class="left">Humidity:</p>
+      <p><span id="humidity"></span> %</p>
+      <p class="left">Wind Speed:</p>
+      <p><span id="windSpeed"></span> mph</p>
+    </div>
+    <footer>
+      <p>
+        Temple Inn &amp; Suites<br />
+        4800 Montgomery Ln.<br />
+        #300<br />
+        Bethesda, MD 20814
+      </p>
+      <img src="images/map-300.jpg" alt="Map of Headquarters">
+      <p>Copyright &copy; 2014 - 2019 | Temple Inn &amp; Suites | <a href="attributions.html">Attributions</a></p>
+    </footer>
+    <script src="scripts/weatherapi.js"></script>
+    <script src="scripts/closures.js"></script>
+    <script src="scripts/hamburger.js"></script>
+  </body>
+</html>

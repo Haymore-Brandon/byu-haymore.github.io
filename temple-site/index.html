@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="The Temple Inn &amp; Suites is a hotel chain that specializes in catering to visitors of Ladder-Day Saint temple visitors.">
+    <title>Temple Inn &amp; Suites</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body>
+    <header>
+      <img src="images/logo-200.jpg" alt="Temple Inn &amp; Suites Logo">
+      <h1>Temple Inn &amp; Suites</h1>
+    </header>
+    <nav>
+      <ul class="navContainer">
+        <li><a href="#" onclick="toggleMenu()"><img src="images/navicon-40.png" alt="navicon menu">Menu</a></li>
+        <li class="selected"><a href="/">Home</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="banner">
+      <picture>
+        <source media="(max-width: 350px)" srcset="images/bed-bedroom-cozy-350.jpg">
+        <source media="(max-width: 600px)" srcset="images/bed-bedroom-cozy-600.jpg">
+        <source media="(min-width: 601px)" srcset="images/bed-bedroom-cozy-1200x418.jpg">
+        <img src="images/bed-bedroom-cozy-1200x418.jpg" alt="Hotel Room View">
+      </picture>
+    </div>
+    <div class="homeContent">
+      <section class="featuredLocation">
+        <div class="featuredContainer">
+          <h2>Gilbert, AZ Temple</h2>
+          <img src="images/temples/gilbert-arizona-temple-400.jpg" alt="">
+          <div class="services">
+            <h3>Services</h3>
+            <ul>
+              <li>Clothing rental available</li>
+              <li>No cafeteria available</li>
+              <li>No patron housing available</li>
+              <li>Distribution center nearby</li>
+            </ul>
+          </div>
+          <div class="facts">
+            <h3>Interesting Facts</h3>
+            <ul>
+              <li>The temple was announced on April 10, 2008</li>
+              <li>Groundbreaking was on November 13, 2010</li>
+              <li>On March 2, 2014, the temple was dedicated</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="checkAvailability">
+        <h2>Check for Availability</h2>
+        <form class="availability" action="thank-you.html" method="post">
+          <label for="locationList">Location</label>
+          <select name="locationList" id="locationList" size="1">
+            <option value="selectLocation" selected disabled>Select Location</option>
+            <option value="gilbertAZ">Gilbert, AZ</option>
+            <option value="tucsonAZ">Tucson, AZ</option>
+            <option value="denverCO">Denver, CO</option>
+            <option value="sandiegoCA">San Diego, CA</option>
+          </select>
+          <label for="number">How many in your party</label>
+          <input type="number" name="how-many" id="number" min="0" max="7">
+          <label for="startDate">Arival Date</label>
+          <input type="date" name="startDate" id="startDate" value="">
+          <label for="endDate">Departure Date</label>
+          <input type="date" name="endDate" id="endDate" value="">
+          <input type="submit" value="Check Availability">
+        </form>
+      </section>
+    </div>
+    <footer>
+      <p>
+        Temple Inn &amp; Suites<br />
+        4800 Montgomery Ln.<br />
+        #300<br />
+        Bethesda, MD 20814
+      </p>
+      <img src="images/map-300.jpg" alt="Map of Headquarters">
+      <p>Copyright &copy; 2014 - 2019 | Temple Inn &amp; Suites | <a href="attributions.html">Attributions</a></p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+  </body>
+</html>
